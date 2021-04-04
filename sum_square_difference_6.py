@@ -5,3 +5,5 @@ sum_of_squares = sum(squares_of_first_100_natural_numbers)
 square_of_sum = sum_of_first_100_natural_numbers ** 2
 
 difference = square_of_sum - sum_of_squares
+
+print(difference)
