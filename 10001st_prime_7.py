@@ -1,7 +1,7 @@
 import prime_number_test
 ## Imported a module containing a function to test whether an input is prime. 
 
-prime_number_counter = 0
+prime_number_counter = 1
 iterator = 1 
 
 while prime_number_counter != 10001:
