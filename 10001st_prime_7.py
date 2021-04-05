@@ -4,7 +4,7 @@ import prime_number_test
 prime_number_counter = 1
 iterator = 1 
 
-while prime_number_counter != 10001:
+while prime_number_counter != 6:
     iterator += 2
     print(iterator)
     if prime_number_test.is_prime(iterator) == True:
