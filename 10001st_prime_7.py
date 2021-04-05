@@ -13,4 +13,3 @@ while prime_number_counter != 10001:
 print(iterator)
 
 
-
