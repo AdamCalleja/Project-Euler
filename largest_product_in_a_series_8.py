@@ -13,7 +13,8 @@ def product_adjacent_digits(slice):
     return product_of_digits
 
 while initial_digit <= (the_number_length - 13):
-    list_of_products.append(product_adjacent_digits(the_number[initial_digit:(initial_digit + 13)])
+    string_slice = slice(initial_digit, (initial_digit + 13))
+    list_of_products.append(product_adjacent_digits(the_number[string_slice])
     initial_digit += 1
 
 list_of_products.sort()
