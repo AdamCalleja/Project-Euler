@@ -8,7 +8,7 @@ def pythagorean_triplet(integer):
     while isinstance((math.sqrt((integer ** 2) + (other_integer ** 2))), int) == False:
         other_integer += 1
         if (math.sqrt((integer ** 2) + (other_integer ** 2))) > (integer + other_integer):
-            initial_integer += 1
+            integer += 1
     return [integer, other_integer, (math.sqrt((integer ** 2) + (other_integer ** 2)))]
 
 while pythagorean_triplet_sum != 1000:
