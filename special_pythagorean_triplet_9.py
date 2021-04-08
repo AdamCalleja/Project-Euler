@@ -1,11 +1,13 @@
+import math
+
 pythagorean_triplet_sum = 0
 initial_integer = 0
 
 def pythagorean_triplet(integer):
     other_integer = 1
-    while isinstance((sqrt((integer ** 2) + (other_integer ** 2))), int) == False:
+    while isinstance((math.sqrt((integer ** 2) + (other_integer ** 2))), int) == False:
         other_integer += 1
-    return [integer, other_integer, (sqrt((integer ** 2) + (other_integer ** 2)))]
+    return [integer, other_integer, (math.sqrt((integer ** 2) + (other_integer ** 2)))]
 
 while pythagorean_triplet_sum != 1000:
     initial_integer += 1
