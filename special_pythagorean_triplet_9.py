@@ -12,6 +12,7 @@ def pythagorean_triplet(integer):
 while pythagorean_triplet_sum != 1000:
     initial_integer += 1
     pythagorean_triplet_sum = sum(pythagorean_triplet(initial_integer))
+    print(pythagorean_triplet_sum = sum(pythagorean_triplet(initial_integer)))
 
 integer_a = pythagorean_triplet(initial_integer)[0]
 integer_b = pythagorean_triplet(initial_integer)[1]
