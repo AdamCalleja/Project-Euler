@@ -6,12 +6,12 @@ pythagorean_integer_a = 0
 
 def pythagorean_triplet(integer_a):
     integer_b = 1
-    hypotenuse = math.sqrt((integer_a ** 2) + (integer_b ** 2))
     while isinstance(hypotenuse, int) == False:
+        hypotenuse = math.sqrt((integer_a ** 2) + (integer_b ** 2))
         integer_b += 1
         if hypotenuse + integer_a + integer_b > desired_pythagorean_triplet_sum:
             return []
-    return [integer, other_integer, hypotenuse]
+    return [integer_a, integer_b, hypotenuse]
 
 while pythagorean_triplet_sum != desired_pythagorean_triplet_sum:
     pythagorean_integer_a += 1
