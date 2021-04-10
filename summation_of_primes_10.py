@@ -9,17 +9,18 @@
 import prime_number_test
 
 prime_sum_cap = 2000000
-loop_control = True
 prime_sum = 0
 prime_numbers = []
 initial_integer = 0
 
-while loop_control == True:
+while prime_sum < prime_sum_cap:
     if prime_number_test.is_prime(initial_integer) == True:
         prime_numbers.append(initial_integer)
     initial_integer += 1
     prime_sum = sum(prime_numbers)
     if prime_sum > 2000000:
-        loop_control = False
+        prime_numbers = prime_numbers[0: -1]
+
+prime_sum = sum(prime_numbers)
 
 print(prime_sum)
