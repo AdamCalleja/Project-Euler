@@ -8,6 +8,7 @@
 
 import time
 
+import prime_number_test
 ## Import the functions that you would like to test above. 
 
 initial_time = time.time()
@@ -16,6 +17,13 @@ initial_time = time.time()
 ## --------------------------------------------------
 
 ## Call the function that you would like to test here. 
+total_primes = 0
+
+for integer in range(0, 100000):
+    if prime_number_test.is_prime(integer) == True:
+        total_primes += 1
+
+print("The total number of prime numbers before 100 000 is:", total_primes)
 
 ## --------------------------------------------------
 
