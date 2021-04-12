@@ -2,6 +2,10 @@
 ## This is done by timing the function, allowing you to compare the relative 
 ## times of different versions of the same function. 
 
+## HOW TO USE: Import the module containing the function you want to test. 
+##             Call the function below. 
+##             Run this module. 
+
 import time
 
 ## Import the functions that you would like to test above. 
