@@ -18,3 +18,6 @@ def is_prime(integer):
 ## of divisors that I have to iterate through. The 'floor()' function is used to get an integer 
 ## value for the so-called 'mirror line'. 
 
+## note: This version is much faster than 'prime_number_test_v1.py' (134 times faster). 
+##       The time taken for this function to find all the prime numbers less than 100 000 was 
+##       0.0564 s (to 3 s.f.).
