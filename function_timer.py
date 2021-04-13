@@ -8,7 +8,6 @@
 
 import time
 
-import prime_number_test_v2
 ## Import the functions that you would like to test above. 
 
 initial_time = time.time()
@@ -17,14 +16,6 @@ initial_time = time.time()
 ## --------------------------------------------------
 
 ## Call the function that you would like to test here. 
-
-total_primes = 0
-
-for integer in range(1, 100000):
-    if prime_number_test_v2.is_prime(integer) == True:
-        total_primes += 1
-
-print("The total number of primes before 100 000 is:", total_primes)
 
 ## --------------------------------------------------
 
