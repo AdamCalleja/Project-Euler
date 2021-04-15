@@ -20,4 +20,4 @@ def is_prime(integer):
 
 ## note: This version is much faster than 'prime_number_test_v1.py' (134 times faster). 
 ##       The time taken for this function to find all the prime numbers less than 100 000 was 
-##       0.0564 s (to 3 s.f.).
+##       0.564 s (to 3 s.f.).
