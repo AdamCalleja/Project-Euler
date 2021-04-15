@@ -13,7 +13,7 @@ def is_prime(integer):
         print(integer, "is not an integer. Please input an integer.")
         return
     max_divisor = math.floor(math.sqrt(integer))
-    for potential_factor in range(2, (max_divisor + 1)):
+    for potential_factor in range(3, (max_divisor + 1)):
         if integer % potential_factor == 0:
             return False
     return True 
