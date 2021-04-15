@@ -23,3 +23,6 @@ def is_prime(integer):
 ## need to check if these numbers have divisors. This makes the function more efficient since it 
 ## does not iterate through the divisors of the even numbers. 
 
+## note: This version is slightly faster than 'prime_number_test_v2.py' (1.28 times faster). 
+##       The time taken for this function to find all the prime numbers less than 100 000 was 
+##       0.442 s (to 3 s.f.).
