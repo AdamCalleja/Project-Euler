@@ -1,5 +1,5 @@
 primes = []
-limit_value = 100 000
+limit_value = 100000
 
 # the 'limit_value' variable above holds the highest number that you
 # want to check. 
