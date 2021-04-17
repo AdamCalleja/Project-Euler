@@ -15,9 +15,14 @@ primes = [True for integer in range(2, limit_value + 1)]
 # integer from 1 to the limit value. The integer itself can be determined
 # from the indieces of the elements. 
 
-while primes[(highest_known_prime - 2): (limit_value + 1)].count(False) < len(primes[(highest_known_prime - 2): (limit_value + 1)]):
+unchecked_integers = primes[(highest_known_prime - 2): (limit_value + 1)]
+next_multiple_index = (highest_known_prime + highest_known_prime - 2)
+
+## I have declared the varaible above in order to make my code more clean. 
+
+while unchecked_integers.count(False) < len(unchecked_integers):
     if primes[(highest_known_prime - 2)] == True:
-        for multiple in range((highest_known_prime + highest_known_prime - 2), (limit_value + 1), highest_known_prime):
+        for multiple in range(next_multiple_index, (limit_value + 1), highest_known_prime):
             primes[multiple - 2] = False
 
         # The above goes through all of the multiples of the highest_known_prime
@@ -27,6 +32,8 @@ while primes[(highest_known_prime - 2): (limit_value + 1)].count(False) < len(pr
         #       indexing starts at 0 in Python. 
 
     highest_known_prime += 1
+    unchecked_integers = primes[(highest_known_prime - 2): (limit_value + 1)]
+    next_multiple_index = (highest_known_prime + highest_known_prime - 2)
 
 for potential_prime in primes:
     if potential_prime == True:
