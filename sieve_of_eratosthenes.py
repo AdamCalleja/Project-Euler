@@ -17,7 +17,7 @@ primes = [True for integer in range(2, limit_value + 1)]
 
 while primes[(highest_known_prime - 2): (limit_value + 1)].count(False) < len(primes[(highest_known_prime - 2): (limit_value + 1)]):
     if primes[(highest_known_prime - 2)] == True:
-        for multiple in range(2, (limit_value + 1), highest_known_prime):
+        for multiple in range((highest_known_prime + highest_known_prime - 2), (limit_value + 1), highest_known_prime):
             primes[multiple - 2] = False
 
         # The above goes through all of the multiples of the highest_known_prime
