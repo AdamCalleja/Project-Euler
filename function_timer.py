@@ -8,7 +8,7 @@
 
 import time
 
-import prime_number_test_v3
+import sieve_of_eratosthenes
 ## Import the functions that you would like to test above. 
 
 initial_time = time.time()
@@ -18,13 +18,9 @@ initial_time = time.time()
 
 ## Call the function that you would like to test here. 
 
-total_primes = 0
+prime_count = len(sieve_of_eratosthenes.main(100000))
 
-for integer in range(1, 100000):
-    if prime_number_test_v3.is_prime(integer) == True:
-        total_primes += 1
-
-print("The total number of primes before 100 000 is:", total_primes)
+print("There are", prime_count, "primes before 100 000")
 
 ## --------------------------------------------------
 
