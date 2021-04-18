@@ -52,3 +52,7 @@ def main(limit_value):
     # of primes and deletes all of the elements with the value 'False'. 
 
     return primes
+
+## note: This is the most inefficient version of my sieve_of_eratosthenes module. 
+##       The time taken for this function to find all the prime numbers less than 100 000 was 
+##       30.0 s (to 3 s.f.).
