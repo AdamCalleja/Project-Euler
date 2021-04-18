@@ -1,5 +1,7 @@
 primes = []
 limit_value = 100000
+composite_indices = []
+total_popped = 0
 
 # the 'limit_value' variable above holds the highest number that you
 # want to check. 
@@ -22,8 +24,8 @@ next_multiple_index = (highest_known_prime + highest_known_prime - 2)
 
 while unchecked_integers.count(False) < len(unchecked_integers):
     if primes[(highest_known_prime - 2)] == True:
-        for multiple in range(next_multiple_index, (limit_value + 1), highest_known_prime):
-            primes[multiple - 2] = False
+        for multiple in range(next_multiple_index, (limit_value - 1), highest_known_prime):
+            primes[multiple] = False
 
         # The above goes through all of the multiples of the highest_known_prime
         # setting the corresponding value in 'primes' to false (only if
@@ -35,11 +37,15 @@ while unchecked_integers.count(False) < len(unchecked_integers):
     unchecked_integers = primes[(highest_known_prime - 2): (limit_value + 1)]
     next_multiple_index = (highest_known_prime + highest_known_prime - 2)
 
-for potential_prime in primes:
-    if potential_prime == True:
-        potential_prime = primes.index(potential_prime)
+for index in range(0, (limit_value - 1)):
+    if primes[index] == True:
+        primes[index] = index + 2
     else:
-        primes.pop(potential_prime)
+        composite_indices.append(index)
+
+for index in composite_indices:
+    primes.pop(index - total_popped)
+    total_popped += 1
 
 # The above replaces the elements with the value 'True' with the value
 # of the corresponding prime number in the list
